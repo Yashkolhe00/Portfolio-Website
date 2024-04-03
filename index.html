@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f02868af22.js" crossorigin="anonymous"></script>
+    +
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span> yash</span> </h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> As a seasoned web developer, I specialize in crafting elegant and efficient solutions using a
+                        blend of cutting-edge technologies and industry best practices. With a keen eye for detail and a
+                        passion for clean, maintainable code, I excel in creating responsive, user-friendly websites and
+                        web applications that exceed client expectations and drive business success."</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('educstions')">Educstions</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><BR>Designining web/app interfaces</li>
+                            <li><span>Web Development</span><BR>Designining website interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educstions">
+                        <ul>
+                            <li><span>2019</span><BR>10th from JSW</li>
+                            <li><span>2021</span><BR>12th from Atulesh Convent</li>
+                            <li><span>2025</span><BR>B.tech from YCCE</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating visually appealing and functional websites through the integration
+                        of layout,typography,images and interactive elements to enhance user experience and achieve
+                        specific goals</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p> design involves creating visually appealing and functional websites through the integration of
+                        layout, typography, images, and interactive elements to enhance user experience and achieve
+                        specific goals</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p> App design focuses on crafting intuitive user interfaces and seamless user experiences within
+                        mobile applications, prioritizing usability, visual aesthetics, and efficient navigation to
+                        engage and satisfy users.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+        <div id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contect-left">
+                        <h1 class="sub-title">Contect Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> yashkolhe226@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>8983492963</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                            <a href=""> <i class="fab fa-twitter-square"></i></a>
+                            <a href=""> <i class="fab fa-instagram"></i></a>
+                            <a href=""> <i class="fab fa-linkdin"></i></a>
+                        </div>
+                        <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contect-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            <p>copyright @ yashkolhe </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classlist.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyghDuyIms_i1eocktZPJwPk8kH2aNVi0RyEKFCqyp-v1CsfXwK2fqzZ5LB8MkZHmc0CA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message send successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = "0"
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
