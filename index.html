@@ -1,175 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f02868af22.js" crossorigin="anonymous"></script>
-    +
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Kolhe | Personal Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/f02868af22.js" crossorigin="anonymous"></script>
+
+  
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="image/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span> yash</span> </h1>
-            </div>
-        </div>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/logo.png" class="logo" alt="Logo" />
+        <ul id="sidemenu">
+          <div class="new1">
+
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">My Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </div>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text" data-aos="fade-up">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Yash</span></h1>
+      </div>
     </div>
-    <div id="About">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="image/user.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> As a seasoned web developer, I specialize in crafting elegant and efficient solutions using a
-                        blend of cutting-edge technologies and industry best practices. With a keen eye for detail and a
-                        passion for clean, maintainable code, I excel in creating responsive, user-friendly websites and
-                        web applications that exceed client expectations and drive business success."</p>
-                    <div class="tab-title">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('educations')">Educations</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><BR>Designining web/app interfaces</li>
-                            <li><span>Web Development</span><BR>Designining website interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="educstions">
-                        <ul>
-                            <li><span>2019</span><BR>10th from JSW</li>
-                            <li><span>2021</span><BR>12th from Atulesh Convent</li>
-                            <li><span>2025</span><BR>B.tech from YCCE</li>
-                        </ul>
+  </div>
 
-                    </div>
-                </div>
-            </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" data-aos="fade-right">
+          <img src="image/user.png" alt="User Image" />
         </div>
+        <div class="about-col-2" data-aos="fade-left">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            As a seasoned web developer, I specialize in crafting elegant and efficient solutions using a blend of cutting-edge technologies and industry best practices. I excel in creating responsive, user-friendly websites and web applications.
+          </p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('educations')">Educations</p>
+            <p class="tab-links" onclick="opentab('exprience')">Expriences</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills" data-aos="fade-up">
+            <ul>
+              <li><span>Languages </span><br />Java, SQL (MySQL), HTML, CSS, C (Beginner)</li>
+              <li><span>Developer Tools </span><br />Git, GitHub, Visual Studio Code, PyCharm</li>
+    
+            </ul>
+          </div>
+           <div class="tab-contents" id="exprience" data-aos="fade-up">
+            <ul>
+              <li><span>Web Developer</span><br />L & D Infotech Pvt Ltd
+ • testing and analytics :SQL,Java,CSS,HTML</li>
+ <li><span> Web Development  </span><br /> Bharat Intern
+ • Build a dynamic websites utilizing : HTML,CSS, JavaScript</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="educations" data-aos="fade-up">
+            <ul>
+              <li><span>2025</span><br />B.Tech from YCCE - (Electronics and Telecommunication Engineering)</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
     </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>Web Design</h2>
-                    <p>Web design involves creating visually appealing and functional websites through the integration
-                        of layout,typography,images and interactive elements to enhance user experience and achieve
-                        specific goals</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <h2>UI/UX Design</h2>
-                    <p> design involves creating visually appealing and functional websites through the integration of
-                        layout, typography, images, and interactive elements to enhance user experience and achieve
-                        specific goals</p>
-                    <a href="#">learn more</a>
-                </div>
-                <div>
-                    <h2>App Design</h2>
-                    <p> App design focuses on crafting intuitive user interfaces and seamless user experiences within
-                        mobile applications, prioritizing usability, visual aesthetics, and efficient navigation to
-                        engage and satisfy users.</p>
-                    <a href="#">learn more</a>
-                </div>
-            </div>
+  </div>
+
+ 
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title" data-aos="fade-up">My Projects</h1>
+      <div class="services-list">
+        <div data-aos="zoom-in">
+          <h2>Weather Website</h2>
+          <p>Develop a website which forecasts detailed and reliable tailored to your location. Real-time updates provide up-to-date information on temperature, precipitation, wind and more.
+      <a href="https://yashkolhe00.github.io/Weather-Website/"> Tech Used: CSS, HTML, JavaScript.</a></p>
+         
         </div>
-        <div id="Contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contect-left">
-                        <h1 class="sub-title">Contect Me</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> yashkolhe226@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i>8983492963</p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
-                            <a href=""> <i class="fab fa-twitter-square"></i></a>
-                            <a href=""> <i class="fab fa-instagram"></i></a>
-                            <a href=""> <i class="fab fa-linkdin"></i></a>
-                        </div>
-                        <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
-                    </div>
-                    <div class="contect-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your email" required>
-                            <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                            <button type="submit" class="btn btn2">submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-
-                </div>
-            </div>
-
-
+        <div data-aos="zoom-in" data-aos-delay="150">
+          <h2>Currency Converter</h2>
+          <p>A simple and fast currency converter that provides real-time exchange rates for major global currencies. Perfect for travelers, shoppers, and anyone needing quick conversions.</p>
+          <a href="https://yashkolhe00.github.io/currency-converter/"> Tech Used : HTML, CSS, JavaScript.</a>
         </div>
-
-        <div class="copyright">
-            <p>copyright @ yashkolhe </p>
+        <div data-aos="zoom-in" data-aos-delay="300">
+          <h2>Hand Sign Recognition System</h2>
+          <p>Developed a robust Machine Learning Hand Sign Language Recognizing Model for differently abled people.Integrated the model into user-friendly interface, allowing real-time hand gestures recognition using webcam
+enabling seamless communication through sign language.</p>
+          <a href="#">Tech Used: Python, Google Teachable Machine, Machine Learning, Python Libraries</a>
         </div>
+      </div>
     </div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+  </div>
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classlist.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classlist.remove("active-tab");
-            }
-            event.currentTarget.classlist.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyghDuyIms_i1eocktZPJwPk8kH2aNVi0RyEKFCqyp-v1CsfXwK2fqzZ5LB8MkZHmc0CA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left" data-aos="fade-right">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-sharp fa-solid fa-paper-plane"></i> yashkolhe226@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 8983492963</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/Yashkolhe00"><i class="fab fa-github"></i></a>
+            <a href="www.linkedin.com/in/yashkolh0000"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="image/my-cv.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right" data-aos="fade-left">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message send successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = "0"
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
+  <!-- Footer -->
+  <div class="copyright">
+    <p>© Yash Kolhe</p>
+  </div>
+
+
+  <script>
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+
+  <script>
+    let sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+
+
+<script>
+
+
+function opentab(tabname) {
+  for (let tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab", "animate-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  const activeTab = document.getElementById(tabname);
+  activeTab.classList.add("active-tab", "animate-tab");
+}
+
+
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyghDuyIms_i1eocktZPJwPk8kH2aNVi0RyEKFCqyp-v1CsfXwK2fqzZ5LB8MkZHmc0CA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
         })
-    </script>
-</body>
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
 
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
 </html>
